@@ -1,0 +1,95 @@
+.blog-page-container .blog-page-heading h3{
+    text-align: center;
+}
+.blog-page-container .blog-page-heading{
+  margin-top: 80px;
+}
+.blog-page-container .blog-page-text{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* General styles for the blog container */
+.post {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    margin-top: 90px;
+  }
+  
+  /* Style for the blog title */
+  .post h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the blog meta information */
+  .blog-meta {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the blog content */
+  .post .content{
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+  }
+  
+  /* Style for the blog images */
+  .post img{
+    width: 300px;
+    height: auto;
+    margin-right: 50px;
+  }
+  .post{
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  /* Style for the blog read more button */
+
+
+.post .blog-read-more-button {
+  border-radius: 4px;
+  background-color: transparent;
+  border: none;
+  color: #565555;
+  text-align: center;
+  font-size: 18px;
+  padding: 6px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  border-bottom: 1px solid #565555;
+  border-top: 1px solid #565555;
+}
+
+.post .blog-read-more-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.post .blog-read-more-button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.post .blog-read-more-button:hover span {
+  padding-right: 25px;
+}
+
+.post .blog-read-more-button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
